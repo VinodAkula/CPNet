@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+<listeners>
+<listener class-name="Execute.RetryListenerClass"/>
+</listeners>
+
+
+    <test name="ToolsQA">
+
+ 	<parameter name="chromebrowser" value="chrome"/>
+	<parameter name="firefoxbrowser" value="firefox"/>
+	<parameter name="AppUrl" value="https://connectpronetqa.azurewebsites.net/"/>
+	
+	<!-- ************************************Groups***************************** -->
+	
+	<parameter name="CreateGroupEMailloginID" value="sasiakula33@gmail.com"/>
+	<parameter name="CreateGroupEMailPwd" value="Admin@1234"/>
+	<parameter name="GroupName" value="Green City"/>
+	<parameter name="GroupDesc" value="Poplution free City in the World"/>
+	<parameter name="UrlName" value="pamten"/>
+	<parameter name="UrlLink" value="http://www.pamten.com/"/>
+	<parameter name="InviteMemberEmail" value="sasivinod.akula@pamten.com"/>
+	<parameter name="InviteMemberEmailPwd" value="Admin@1239"/>
+	<parameter name="Comment" value="Happy to live in the Poplution free world"/>
+	
+		<classes>
+
+	
+		     <class name="Execute.TM_005GroupsTestCases" /> 
+		    
+
+		</classes>
+
+    </test>
+
+</suite>

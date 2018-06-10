@@ -1,0 +1,149 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+<listeners>
+<listener class-name="Execute.RetryListenerClass"/>
+</listeners>
+
+
+    <test name="ToolsQA">
+
+ 
+    <!-- ******************************** Member Registration ******************************* -->
+	<parameter name="chromebrowser" value="chrome"/>
+	<parameter name="firefoxbrowser" value="firefox"/>
+	<parameter name="AppUrl" value="https://connectpronetqa.azurewebsites.net/"/>
+	<parameter name="EmailID" value="sanyarichardsrss@gmail.com"/>
+	<parameter name="AppPwd" value="Admin@123"/>
+	<parameter name="GmailPwd" value="Pamten@123"/>
+	<parameter name="OrganizationToReject" value="steve"/>
+	<parameter name="OrganizationToApprove" value="steve"/>
+	
+	<!-- ******************************Eevnt Registration**********************************-->
+	
+	<parameter name="AppLoginEmailID" value="sasiakula99@yahoo.com"/>
+	<parameter name="AppLoginPwd" value="Admin@123"/>
+	<!-- //Event To be register -->
+	<parameter name="EventName" value="nyc"/>
+	<parameter name="AttendeeEmailID" value="andrew74444@gmail.com"/>
+	<parameter name="AttendeeFirstName" value="Andrew"/>
+	<parameter name="AttendeelastName" value="Thomson"/>
+	<parameter name="AttendeeCompanyName" value="Pamten"/>
+	<!-- <parameter name="AttendeeGmailLoginID" value="AttendeeEmailID"/> -->
+	<parameter name="AttendeeGmailpwd" value="1237asdf"/>
+	
+	        <!-- //Payer Details-->
+	
+	<parameter name="PayerEmailID" value="andrew74444@gmail.com"/>
+	<parameter name="PayerFirstName" value="Andrew"/>
+	<parameter name="PayerlastName" value="Thomson"/>
+	<parameter name="PayerCompanyName" value="Pamten"/>
+	         <!-- //Promocodes-->
+	
+	<parameter name="PromoCode1" value="489V1RUXXB"/>
+	<parameter name="PromoCode2" value="4K9PFU3X1N"/>
+	         <!-- //Paypal login Credentails -->
+	
+	<parameter name="PaypalLoginEmailID" value="andrew74444@gmail.com"/>
+	<parameter name="paypalLoginPwd" value="Admin@123"/>
+	
+	        <!-- //Authorized Payment Details -->
+	
+	<parameter name="AuthorizedPayerEmailId" value="andrew74444@gmail.com"/>
+	<parameter name="CardNo" value="4242424242424242"/>
+	<parameter name="ExpDate" value="0333"/>
+	<parameter name="Cvv" value="333"/>
+	<parameter name="FirstName" value="Andrew"/>
+	<parameter name="Lastname" value="thomson"/>
+	<parameter name="Zip" value="500081"/>
+	<parameter name="Address" value="Madhapur"/>
+	<parameter name="City" value="Hyderabad"/>
+	<parameter name="PhNo" value="7075637121"/>
+	
+	
+	<!-- ******************************** Login Test Data ******************************* -->
+	<parameter name="InvalidEmailID" value="sasiakula33@gmail.com"/>
+	<parameter name="InvalidEmailPwd" value="Pamten@123"/>
+	<parameter name="ExpiredEmailID" value="DeSanctis23@outlook.com"/>
+	<parameter name="ExpiredEmailPwd" value="Admin@123"/>
+	<parameter name="PendingEmailID" value="st.louiscardinals@rediffmail.com"/>
+	<parameter name="PendingEmailPwd" value="Admin@123"/>
+	<parameter name="SuspendedEmailID" value="gayatithehr@gmail.com"/>
+	<parameter name="SuspendedEmailPwd" value="Admin@123"/>
+	<parameter name="validEmailID" value="sasiakula33@gmail.com"/>
+	<parameter name="validEmailPwd" value="Admin@123"/>
+	
+	
+	
+	<!-- ******************************** Password ******************************* -->
+	<parameter name="RequestNewPasswordEmailID" value="elliswatson12x@gmail.com"/>
+	<parameter name="GmailPassword" value="Admin@123"/>
+	<parameter name="Newpassword" value="Admin@12311"/>
+	<parameter name="ChangePwdApploginID" value="elizabeth.evans003@gmail.com"/>
+	<parameter name="ChangePwdAppPwd" value="Pamten@12"/>
+	<parameter name="AppNewPwd" value="Pamten@112"/>
+	<parameter name="ChangePwdGmailPwd" value="Pamten@123"/>
+	
+	<!-- ************************************Groups***************************** -->
+	
+	<parameter name="CreateGroupEMailloginID" value="sasiakula33@gmail.com"/>
+	<parameter name="CreateGroupEMailPwd" value="Admin@123"/>
+	<parameter name="GroupName" value=""/>
+	<parameter name="GroupDesc" value=""/>
+	<parameter name="UrlName" value=""/>
+	<parameter name="UrlLink" value=""/>
+	<parameter name="InviteMemberEmail" value=""/>
+	<parameter name="InviteMemberEmailPwd" value=""/>
+	<parameter name="TextComment" value=""/>
+	
+	
+	<!-- ************************************MyProfile***************************** -->
+	<!-- MyProfile -->
+	<parameter name="PrimaryMemberEmail" value="Sasivinod.akula@pamten.com"/>
+	<parameter name="PrimaryMemberPwd" value="Admin@1239"/>
+	<parameter name="PFName" value="Sasi"/>
+	<parameter name="PLName" value="Vinod"/>
+	<parameter name="Pjtitle" value="QA Tester"/>
+	<parameter name="PPSummary" value="2 Years of Experience in Testing"/>
+	<parameter name="PYtube" value=""/>
+	<parameter name="PLUrl" value=""/>
+	<parameter name="PFUrl" value=""/>
+	<parameter name="PTUrl" value=""/>
+	<parameter name="PGUrl" value=""/>
+	<!-- AddPortfolio -->
+	<parameter name="AddProtfolioName"  value="Google"/>
+	<parameter name="AddProtfolioUrl"  value="https://www.google.com/"/>
+	<!-- UpdatePortfolio -->
+	<parameter name="AddProtfolioName"  value="Pamten"/>
+	<parameter name="AddProtfolioUrl"  value="https://www.pamten.com/"/>
+	<!-- AddSkills -->
+	<parameter name="AddSkillsName"  value="java"/>
+	<!-- AddInterests -->
+	<parameter name="AddInterestsName" value="Automation"/>
+	<!-- Company Profile -->
+	<parameter name="CEmail" value="hr@pamten.com"/>
+	<parameter name="CDesc" value=""/>
+	<parameter name="CLUrl" value=""/>
+	<parameter name="CFUrl" value=""/>
+	<parameter name="CTUrl" value=""/>
+	<parameter name="CGUrl" value=""/>
+	<parameter name="LocationName" value="New Jersy"/>
+	<parameter name="LocationAddress" value="5 independance way princeton"/>
+	
+		<classes>
+
+		     <!-- <class name="Execute.TM_001MemberShipRegistrationTestCases" /> --> 
+		    <class name="Execute.TM_002EventRegistrationTestCases" />		    
+		    <!--<class name="Execute.TM_003LoginTestCases" />-->
+		    <!-- <class name="Execute.TM_004PasswordTestCases" /> -->
+		    <!-- <class name="Execute.TM_005GroupsTestCases" /> -->
+		    <!-- <class name="Execute.TM_006MyProfileTestCases" /> -->
+		    <!-- <class name="Execute.TM_TM_007EndorsementsTestCases" /> -->
+		    <!-- <class name="Execute.TM_008TestimonialsTestCases /> -->
+		    
+
+		</classes>
+
+    </test>
+
+</suite>

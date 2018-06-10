@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+<listeners>
+<listener class-name="Execute.RetryListenerClass"/>
+</listeners>
+
+
+    <test name="ToolsQA">
+
+ 
+    
+		
+	
+	<!-- ************************************MyProfile***************************** -->
+	<!-- MyProfile -->
+	<parameter name="chromebrowser" value="chrome"/>
+	<parameter name="firefoxbrowser" value="firefox"/>
+	<parameter name="AppUrl" value="https://connectpronetqa.azurewebsites.net/"/>
+	
+	<parameter name="PrimaryMemberEmail" value="Sasivinod.akula@pamten.com"/>
+	<parameter name="PrimaryMemberPwd" value="Admin@1239"/>
+	<parameter name="PFName" value="Sasi"/>
+	<parameter name="PLName" value="Vinod"/>
+	<parameter name="Pjtitle" value="QA Tester"/>
+	<parameter name="PPSummary" value="2 Years of Experience in Testing"/>
+	<parameter name="PYtube" value=""/>
+	<parameter name="PLUrl" value=""/>
+	<parameter name="PFUrl" value=""/>
+	<parameter name="PTUrl" value=""/>
+	<parameter name="PGUrl" value=""/>
+	<!-- AddPortfolio -->
+	<parameter name="AddProtfolioName"  value="Google"/>
+	<parameter name="AddProtfolioUrl"  value="https://www.google.com/"/>
+	<!-- UpdatePortfolio -->
+	<parameter name="AddProtfolioName"  value="Pamten"/>
+	<parameter name="AddProtfolioUrl"  value="https://www.pamten.com/"/>
+	<!-- AddSkills -->
+	<parameter name="AddSkillsName"  value="java"/>
+	<!-- AddInterests -->
+	<parameter name="AddInterestsName" value="Automation"/>
+	<!-- Company Profile -->
+	<parameter name="CEmail" value="hr@pamten.com"/>
+	<parameter name="CDesc" value=""/>
+	<parameter name="CLUrl" value=""/>
+	<parameter name="CFUrl" value=""/>
+	<parameter name="CTUrl" value=""/>
+	<parameter name="CGUrl" value=""/>
+	<!-- Additional Information -->
+	<parameter name="LocationName" value="New Jersy"/>
+	<parameter name="LocationAddress" value="5 independance way princeton"/>
+	
+		<classes>
+
+		    <class name="Execute.TM_006MyProfileTestCases" /> 
+		    
+
+		</classes>
+
+    </test>
+
+</suite>
